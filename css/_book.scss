@@ -63,7 +63,7 @@
       margin-bottom: 5rem;
     }
     &-form {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
       grid-gap: 2.5rem 0;
     }
     &-button {

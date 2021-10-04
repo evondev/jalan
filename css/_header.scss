@@ -136,7 +136,13 @@
     font-size: 1.8rem;
   }
   @media screen and (max-width: 767px) {
+    &-input {
+      padding: 2.5rem;
+      font-size: 1.8rem;
+    }
     &-button {
+      width: 8rem;
+      height: 8rem;
       margin-left: 2rem;
     }
   }

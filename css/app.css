@@ -175,6 +175,12 @@ body {
     height: 8rem;
     font-size: 2rem;
   }
+
+  .btn {
+    height: auto;
+    padding: 4rem;
+    font-size: 2.2rem;
+  }
 }
 .header {
   background-color: #daefff;
@@ -306,7 +312,13 @@ body {
   font-size: 1.8rem;
 }
 @media screen and (max-width: 767px) {
+  .search-input {
+    padding: 2.5rem;
+    font-size: 1.8rem;
+  }
   .search-button {
+    width: 8rem;
+    height: 8rem;
     margin-left: 2rem;
   }
 }
@@ -370,6 +382,10 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-gap: 5rem;
 }
+.destination-item {
+  display: flex;
+  flex-direction: column;
+}
 .destination-image {
   border-radius: 20px;
   overflow: hidden;
@@ -377,6 +393,7 @@ body {
   padding-bottom: 100%;
   height: 0;
   margin-bottom: 3.5rem;
+  flex-shrink: 0;
 }
 .destination-image img {
   position: absolute;
@@ -385,6 +402,12 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.destination-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .destination-title {
   font-size: 2rem;
@@ -412,6 +435,13 @@ body {
 @media screen and (max-width: 767px) {
   .destination {
     margin-bottom: 10rem;
+    padding-top: 5rem;
+  }
+  .destination-heading {
+    margin-bottom: 3rem;
+  }
+  .destination-text {
+    margin-bottom: 5rem;
   }
 }
 
@@ -587,7 +617,7 @@ body {
     margin-bottom: 10rem;
   }
   .blog-image {
-    height: auto;
+    height: 30rem;
   }
   .blog-heading {
     margin-bottom: 5rem;
@@ -662,7 +692,7 @@ body {
     margin-bottom: 5rem;
   }
   .book-form {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     grid-gap: 2.5rem 0;
   }
   .book-button {
